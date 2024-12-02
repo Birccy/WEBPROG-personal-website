@@ -1,39 +1,60 @@
-/* Flexbox Container */
-.flex-container {
+/* Flexbox for About Me section */
+.about-container {
   display: flex;
-  flex-wrap: wrap; /* Allow elements to wrap */
-  justify-content: space-between; /* Space between items */
-  align-items: center; /* Align items vertically in the center */
-  background-color: DodgerBlue;
-  padding: 20px; /* Add padding for spacing */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-/* Flexbox Items */
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 10px;
-  flex: 1 1 45%; /* Makes each div flexible, with a minimum width of 45% */
-  min-width: 200px; /* Prevents items from becoming too small */
-  text-align: center;
-  font-size: 18px; /* Adjust font size */
+.about-image {
+  flex: 0 0 200px; /* Fixed size for the image */
+  margin-right: 20px;
 }
 
-/* Ensure images are responsive */
+.about-text {
+  flex: 1; /* The text takes up the remaining space */
+  font-size: 16px;
+}
+
+/* Make sure images are responsive */
 img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* Centers the image inside the div */
+  margin: 0 auto;
 }
 
-/* Mobile responsiveness */
+/* Flexbox for Memorable Photos section */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.flex-container > div {
+  flex: 1 1 45%; /* Flex items take up 45% of the width */
+  margin: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
-  .flex-container {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+  /* Stack the About Me sections vertically on smaller screens */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .flex-container > div {
-    width: 100%; /* Full width for each item on smaller screens */
+    width: 100%; /* Make images take full width on mobile */
   }
 }
