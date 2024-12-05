@@ -12,29 +12,27 @@ h1, h2 {
     color: #333;
 }
 
-/* Grid Layout for Main Sections */
-.container {
+/* Grid Layout for Main Structure */
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    gap: 20px;
     padding: 20px;
 }
 
-@media (min-width: 600px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: footer; }
 
 /* Section Styling */
-section {
-    background: white;
+.grid-container > div {
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -46,12 +44,17 @@ section {
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.photos img {
-    max-width: 100%;
-    height: auto;
+.photo-img {
+    width: 45%;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.photo-img:hover {
+    transform: scale(1.05);
 }
 
 /* Table Styling */
@@ -67,11 +70,18 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #f2f2f2;
 }
 
-/* List Styling */
-ol {
-    margin-left: 20px;
+/* Responsive Design for Grid Layout */
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
