@@ -38,50 +38,62 @@ h1, h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Flexbox for Photos */
-.photos {
+/* Flexbox for About Me and Education section */
+.about-content, .education-content {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.photo-img {
-    width: 45%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.photo-img:hover {
-    transform: scale(1.05);
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-th {
-    background-color: #f2f2f2;
+.education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
-/* Responsive Design for Grid Layout */
-@media (min-width: 600px) {
+.education-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin: 5px 0;
+}
+
+.education-heading {
+    font-weight: bold;
+}
+
+/* Memorable Photos Section */
+.photos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo-img {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'header header header'
+            'menu main main'
+            'menu footer footer';
     }
-}
 
-@media (min-width: 1024px) {
-    .grid-container {
-        grid-template-columns: 1fr 1fr 1fr;
+    .photos {
+        flex-direction: column;
+    }
+
+    .education-row {
+        flex-direction: column;
+        text-align: center;
     }
 }
