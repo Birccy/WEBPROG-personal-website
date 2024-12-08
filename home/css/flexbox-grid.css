@@ -1,3 +1,4 @@
+/* General Reset */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -29,8 +30,41 @@ h1, h2 {
     border-radius: 8px;
 }
 
+/* Profile Picture Styling */
+.profile-img {
+    width: 120px; /* Smaller size */
+    height: 120px;
+    border-radius: 50%; /* Circle shape */
+    margin: 0 auto; /* Center align */
+    display: block; /* Ensure it's centered */
+    object-fit: cover; /* Ensure proper cropping */
+}
+
+/* Memorable Photos Styling */
+.photos {
+    display: flex;
+    gap: 10px; /* Space between photos */
+    justify-content: center; /* Center alignment */
+    flex-wrap: wrap; /* Wrap photos on smaller screens */
+}
+
 .photos img {
-    max-width: 100%;
-    border-radius: 8px;
-    display-block;
+    width: 150px; /* Thumbnail size */
+    height: 150px;
+    border-radius: 8px; /* Rounded edges */
+    object-fit: cover; /* Crop the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Education Section */
+.education-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+    text-align: center;
+    margin: 10px 0;
+}
+
+.education-heading {
+    font-weight: bold;
+    color: #444;
 }
