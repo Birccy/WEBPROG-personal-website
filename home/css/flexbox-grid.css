@@ -20,6 +20,7 @@ h1, h2 {
     grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
     gap: 20px;
     padding: 20px;
+    grid-template-rows: auto auto; /* Ensure two rows */
 }
 
 /* Item Styling */
@@ -46,6 +47,7 @@ h1, h2 {
 
 /* IT Experience Section */
 .item3 {
+    grid-column: 3; /* Moves IT Experience to the 3rd column */
     background-color: #3d0a0a; /* Dark Red for IT Experience */
     color: #fff; /* White text */
 }
@@ -61,6 +63,7 @@ h1, h2 {
 
 /* Memorable Photos Section */
 .item4 {
+    grid-column: span 3; /* Takes up all three columns */
     background-color: #550b0b; /* Rich Red for Photos */
     color: #fff; /* White text */
 }
@@ -114,5 +117,10 @@ h1, h2 {
 
 /* About me content text */
 .about-content p {
+    color: #333; /* Dark text color */
+}
+
+/* IT Experience content text */
+.item3 p {
     color: #333; /* Dark text color */
 }
