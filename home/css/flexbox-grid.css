@@ -18,38 +18,39 @@ header h1 {
 /* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
 }
 
-/* Section Styling */
-section {
+/* Box Shadows for Sections */
+.box-shadow {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
-.about-me, .education {
-    grid-column: span 2;
+/* Flexbox for Alignment */
+.flexbox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-/* About Me Section */
 .profile-img {
-    display: block;
-    margin: 0 auto 15px;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin: 10px 0;
 }
 
 thead {
@@ -67,18 +68,10 @@ tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* IT Experience Section */
-.it-experience ul {
-    list-style: disc;
-    margin: 0;
-    padding-left: 20px;
-}
-
-/* Memorable Photos Section */
+/* Photos Section */
 .photos {
-    display: flex;
-    gap: 10px;
     flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
 }
 
@@ -87,5 +80,5 @@ tbody tr:nth-child(even) {
     height: 150px;
     border-radius: 8px;
     object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
