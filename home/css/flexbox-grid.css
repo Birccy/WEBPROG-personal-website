@@ -100,3 +100,20 @@ h1, h2 {
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+/* Add spacing and fixes for blank space */
+.grid-container {
+    margin-top: 20px; /* Adjust top margin */
+    margin-right: 0;  /* Remove right margin */
+}
+
+/* Fix for body margin/padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure content isn't overflowing */
+* {
+    box-sizing: border-box;
+}
