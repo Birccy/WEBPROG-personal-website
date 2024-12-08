@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -12,87 +11,26 @@ h1, h2 {
     color: #333;
 }
 
-/* Grid Layout for Main Structure */
 .grid-container {
     display: grid;
     grid-template-areas:
-        'header header header header header header'
-        'menu main main main right right'
-        'menu footer footer footer footer footer';
+        'header'
+        'menu'
+        'main'
+        'right'
+        'footer';
     gap: 20px;
     padding: 20px;
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-.item6 { grid-area: footer; }
-
-/* Section Styling */
 .grid-container > div {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Flexbox for About Me and Education section */
-.about-content, .education-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.education-content {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-.education-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    margin: 5px 0;
-}
-
-.education-heading {
-    font-weight: bold;
-}
-
-/* Memorable Photos Section */
-.photos {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.photo-img {
-    max-width: 250px;
-    max-height: 250px;
-    object-fit: cover;
+    background: white;
+    padding: 15px;
     border-radius: 8px;
 }
 
-/* Responsive Layout */
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-areas:
-            'header header header'
-            'menu main main'
-            'menu footer footer';
-    }
-
-    .photos {
-        flex-direction: column;
-    }
-
-    .education-row {
-        flex-direction: column;
-        text-align: center;
-    }
+.photos img {
+    max-width: 100%;
+    border-radius: 8px;
+    display-block;
+}
