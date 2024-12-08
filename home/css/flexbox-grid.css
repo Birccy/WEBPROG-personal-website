@@ -24,7 +24,7 @@ h1, h2 {
 
 /* Item Styling */
 .grid-container > div {
-    background: #fff;
+    background: #fff; /* Default background is white */
     padding: 20px;
     border-radius: 8px;
 }
@@ -89,7 +89,7 @@ h1, h2 {
     object-fit: cover;
 }
 
-/* Photos (Flexbox) */
+/* Memorable Photos */
 .photos {
     display: flex;
     gap: 10px;
@@ -103,4 +103,16 @@ h1, h2 {
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Fix the white text visibility on white backgrounds */
+.about-content, .education-content, .it-experience-content {
+    background-color: #f4f4f4; /* Light background to make text visible */
+    color: #333; /* Dark text */
+    padding: 10px;
+}
+
+/* About me content text */
+.about-content p {
+    color: #333; /* Dark text color */
 }
