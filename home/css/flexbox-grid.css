@@ -20,12 +20,11 @@ h1, h2 {
     grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
     gap: 20px;
     padding: 20px;
-    grid-template-rows: auto auto; /* Ensure two rows */
 }
 
 /* Item Styling */
 .grid-container > div {
-    background: #fff; /* Default background is white */
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
 }
@@ -34,56 +33,10 @@ h1, h2 {
 .item1 {
     grid-column: span 2; /* Takes up two columns */
     background-color: #350d12; /* Dark Red for background */
-    color: #fff; /* White text */
+    color: #fff;
     text-align: center;
 }
 
-/* Education Section */
-.item2 {
-    grid-column: span 2;
-    background-color: #6b1616; /* Lighter Red for Education */
-    color: #fff; /* White text */
-}
-
-/* IT Experience Section */
-.item3 {
-    grid-column: 3; /* Moves IT Experience to the 3rd column */
-    background-color: #3d0a0a; /* Dark Red for IT Experience */
-    color: #fff; /* White text */
-}
-
-.item3 ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.item3 li {
-    padding: 5px 0;
-}
-
-/* Memorable Photos Section */
-.item4 {
-    grid-column: span 3; /* Takes up all three columns */
-    background-color: #550b0b; /* Rich Red for Photos */
-    color: #fff; /* White text */
-}
-
-/* Education Row */
-.education-row {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    text-align: center;
-    margin: 10px 0;
-}
-
-/* Education Heading */
-.education-heading {
-    font-weight: bold;
-    color: #fff; /* White text */
-    background-color: #9b1b30; /* Aatrox Red for headers */
-}
-
-/* Profile Image */
 .profile-img {
     width: 120px;
     height: 120px;
@@ -92,7 +45,56 @@ h1, h2 {
     object-fit: cover;
 }
 
-/* Memorable Photos */
+/* Education Section */
+.item2 {
+    grid-column: span 2;
+    background-color: #6b1616; /* Lighter Red for Education */
+    color: #fff;
+}
+
+.education-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.education-heading {
+    font-weight: bold;
+    color: #fff;
+    background-color: #9b1b30; /* Aatrox Red for headers */
+}
+
+/* IT Experience Section */
+.item3 {
+    grid-column: 3; /* Moves IT Experience to the 3rd column */
+    background-color: #3d0a0a; /* Dark Red for IT Experience */
+    color: #fff; /* White text */
+    padding: 20px;
+}
+
+/* Ensure list items in IT Experience are visible */
+.item3 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item3 li {
+    padding: 5px 0;
+    color: #333; /* Dark text color for visibility */
+}
+
+/* Make sure content text is visible */
+.item3 p {
+    color: #333; /* Dark text color */
+}
+
+/* Memorable Photos Section */
+.item4 {
+    background-color: #550b0b; /* Rich Red for Photos */
+    color: #fff;
+}
+
 .photos {
     display: flex;
     gap: 10px;
@@ -106,21 +108,4 @@ h1, h2 {
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Fix the white text visibility on white backgrounds */
-.about-content, .education-content, .it-experience-content {
-    background-color: #f4f4f4; /* Light background to make text visible */
-    color: #333; /* Dark text */
-    padding: 10px;
-}
-
-/* About me content text */
-.about-content p {
-    color: #333; /* Dark text color */
-}
-
-/* IT Experience content text */
-.item3 p {
-    color: #333; /* Dark text color */
 }
