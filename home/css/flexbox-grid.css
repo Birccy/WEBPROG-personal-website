@@ -1,105 +1,85 @@
 /* General Reset */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-h1, h2 {
-    text-align: center;
+header h1 {
+    background-color: #9b1b30;
     color: #fff;
-    background-color: #9b1b30; /* Aatrox Red */
-    padding: 15px;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
 }
 
 /* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
 }
 
-/* Item Styling */
-.grid-container > div {
-    background: #fff;
-    padding: 20px;
+/* Section Styling */
+section {
+    background-color: #fff;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.about-me, .education {
+    grid-column: span 2;
 }
 
 /* About Me Section */
-.item1 {
-    grid-column: span 2; /* Takes up two columns */
-    background-color: #350d12; /* Dark Red for background */
-    color: #fff;
-    text-align: center;
-}
-
 .profile-img {
+    display: block;
+    margin: 0 auto 15px;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin: 20px auto;
     object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Education Section */
-.item2 {
-    grid-column: span 2;
-    background-color: #6b1616; /* Lighter Red for Education */
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #9b1b30;
     color: #fff;
 }
 
-.education-row {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+th, td {
+    padding: 10px;
     text-align: center;
-    margin: 10px 0;
+    border: 1px solid #ddd;
 }
 
-.education-heading {
-    font-weight: bold;
-    color: #fff;
-    background-color: #9b1b30; /* Aatrox Red for headers */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 /* IT Experience Section */
-.item3 {
-    grid-column: 3; /* Moves IT Experience to the 3rd column */
-    background-color: #3d0a0a; /* Dark Red for IT Experience */
-    color: #fff; /* White text */
-    padding: 20px;
-}
-
-/* Ensure list items in IT Experience are visible */
-.item3 ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.item3 li {
-    padding: 5px 0;
-    color: #333; /* Dark text color for visibility */
-}
-
-/* Make sure content text is visible */
-.item3 p {
-    color: #333; /* Dark text color */
+.it-experience ul {
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
 }
 
 /* Memorable Photos Section */
-.item4 {
-    background-color: #550b0b; /* Rich Red for Photos */
-    color: #fff;
-}
-
 .photos {
     display: flex;
     gap: 10px;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .photos img {

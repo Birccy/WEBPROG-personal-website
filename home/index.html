@@ -4,90 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile</title>
-    <!-- Link to External CSS File -->
     <link rel="stylesheet" href="css/flexbox-grid.css">
 </head>
 <body>
+    <header>
+        <h1>Personal Profile Web Page</h1>
+    </header>
 
-<h1>Personal Profile Web Page</h1>
-
-<div class="grid-container">
-    <!-- About Me Section -->
-    <div class="item1">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.6435-9/116731274_118026103338864_7024368847241138582_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeERD8VDOfXzwRtzebwwSQ3KIbh6xsNvwEghuHrGw2_ASHy367h9M05HNeGlgWQj0jpW84IANe86Filr2sXU6kMb&_nc_ohc=oUUB2l0oRIMQ7kNvgFo6q33&_nc_zt=23&_nc_ht=scontent.fmnl30-2.fna&_nc_gid=AZBxnR3PF_-fqPIMWwgQGxI&oh=00_AYBYeJVG46GwyV65nNQSe3kk_17rXvROhBQGqj_1qNUbVA&oe=6774BFF7" alt="Profile Picture" class="profile-img" />
-            <p>Name: Ric Brian P. Boado</p>
+    <main class="grid-container">
+        <!-- About Me Section -->
+        <section class="about-me">
+            <h2>About Me</h2>
+            <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.6435-9/116731274_118026103338864_7024368847241138582_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeERD8VDOfXzwRtzebwwSQ3KIbh6xsNvwEghuHrGw2_ASHy367h9M05HNeGlgWQj0jpW84IANe86Filr2sXU6kMb&_nc_ohc=oUUB2l0oRIMQ7kNvgFo6q33&_nc_zt=23&_nc_ht=scontent.fmnl30-2.fna&_nc_gid=AZBxnR3PF_-fqPIMWwgQGxI&oh=00_AYBYeJVG46GwyV65nNQSe3kk_17rXvROhBQGqj_1qNUbVA&oe=6774BFF7" alt="Profile Picture" class="profile-img">
+            <p><strong>Name:</strong> Ric Brian P. Boado</p>
             <p>Currently studying Bachelor of Science in Computer Science with a specialization in Cybersecurity and Forensics at Asia Pacific College (APC), 2nd year.</p>
             <p>Consistently an honor/high honor student throughout elementary, high school, and college.</p>
-            <p>Interests include video games, coding, anime, and animation.</p>
-        </div>
-    </div>
+            <p><strong>Interests:</strong> Video games, coding, anime, and animation.</p>
+        </section>
 
-    <!-- Education & Achievements Section -->
-    <div class="item2">
-        <h2>Education & Achievements</h2>
-        <div class="education-content">
-            <div class="education-row">
-                <span class="education-heading">Education Level</span>
-                <span class="education-heading">Program/Strand</span>
-                <span class="education-heading">School</span>
-                <span class="education-heading">Year</span>
-                <span class="education-heading">Awards</span>
-            </div>
-            <div class="education-row">
-                <span>College</span>
-                <span>BS Computer Science with specialization in Cybersecurity and Forensics</span>
-                <span>Asia Pacific College</span>
-                <span>2023-2027</span>
-                <span>Honor Student</span>
-            </div>
-            <div class="education-row">
-                <span>Senior High School</span>
-                <span>TVL-ICT</span>
-                <span>Pasay City South High School</span>
-                <span>2017-2021</span>
-                <span>With High Honors</span>
-            </div>
-            <div class="education-row">
-                <span>Junior High School</span>
-                <span>N/A</span>
-                <span>Pasay City South High School</span>
-                <span>2021-2023</span>
-                <span>With High Honors</span>
-            </div>
-            <div class="education-row">
-                <span>Elementary</span>
-                <span>N/A</span>
-                <span>Villamor Air Base Elementary School</span>
-                <span>2011-2017</span>
-                <span>Honor Student</span>
-            </div>
-        </div>
-    </div>
+        <!-- Education & Achievements Section -->
+        <section class="education">
+            <h2>Education & Achievements</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Education Level</th>
+                        <th>Program/Strand</th>
+                        <th>School</th>
+                        <th>Year</th>
+                        <th>Awards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>College</td>
+                        <td>BS Computer Science with specialization in Cybersecurity and Forensics</td>
+                        <td>Asia Pacific College</td>
+                        <td>2023-2027</td>
+                        <td>Honor Student</td>
+                    </tr>
+                    <tr>
+                        <td>Senior High School</td>
+                        <td>TVL-ICT</td>
+                        <td>Pasay City South High School</td>
+                        <td>2017-2021</td>
+                        <td>With High Honors</td>
+                    </tr>
+                    <tr>
+                        <td>Junior High School</td>
+                        <td>N/A</td>
+                        <td>Pasay City South High School</td>
+                        <td>2021-2023</td>
+                        <td>With High Honors</td>
+                    </tr>
+                    <tr>
+                        <td>Elementary</td>
+                        <td>N/A</td>
+                        <td>Villamor Air Base Elementary School</td>
+                        <td>2011-2017</td>
+                        <td>Honor Student</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <!-- IT Experience Section -->
-    <div class="item3">
-        <h2>IT Experience</h2>
-        <ul>
-            <li>Building my own personal PC</li>
-            <li>Simple coding projects with Python</li>
-            <li>Tutorials on YouTube/courses about coding</li>
-            <li>Basic Wireshark packet handling</li>
-        </ul>
-    </div>
+        <!-- IT Experience Section -->
+        <section class="it-experience">
+            <h2>IT Experience</h2>
+            <ul>
+                <li>Building my own personal PC</li>
+                <li>Simple coding projects with Python</li>
+                <li>Tutorials on YouTube/courses about coding</li>
+                <li>Basic Wireshark packet handling</li>
+            </ul>
+        </section>
 
-    <!-- Memorable Photos Section -->
-    <div class="item4">
-        <h2>Memorable Photos</h2>
-        <div class="photos">
-            <a href="https://postimg.cc/dZRKCzfc"><img src="https://i.postimg.cc/dZRKCzfc/mphoto1.jpg" alt="Memorable Photo 1" class="photo-img" /></a>
-            <a href="https://postimg.cc/9rV22Q4m"><img src="https://i.postimg.cc/9rV22Q4m/mphoto2.jpg" alt="Memorable Photo 2" class="photo-img" /></a>
-            <a href="https://postimg.cc/Dm1hRXwp"><img src="https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg" alt="Memorable Photo 3" class="photo-img" /></a>
-            <a href="https://postimg.cc/CBq0hZH1"><img src="https://i.postimg.cc/CBq0hZH1/mphoto4.jpg" alt="Memorable Photo 4" class="photo-img" /></a>
-        </div>
-    </div>
-</div>
-
+        <!-- Memorable Photos Section -->
+        <section class="memorable-photos">
+            <h2>Memorable Photos</h2>
+            <div class="photos">
+                <img src="https://i.postimg.cc/dZRKCzfc/mphoto1.jpg" alt="Memorable Photo 1">
+                <img src="https://i.postimg.cc/9rV22Q4m/mphoto2.jpg" alt="Memorable Photo 2">
+                <img src="https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg" alt="Memorable Photo 3">
+                <img src="https://i.postimg.cc/CBq0hZH1/mphoto4.jpg" alt="Memorable Photo 4">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
