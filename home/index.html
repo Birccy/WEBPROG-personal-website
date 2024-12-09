@@ -1,94 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Bootstrap Example</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Personal Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-<h1>Personal Profile Web Page</h1>
-
-<div class="container-fluid mt-3">
+<div class="container-fluid mt-4">
+  <!-- Header -->
+  <div class="text-center">
+    <h1 class="display-4">Personal Profile Web Page</h1>
+  </div>
+  
+  <!-- About Me Section -->
+  <section class="my-5">
     <h2>About Me</h2>
-    <div>
-        <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.6435-9/116731274_118026103338864_7024368847241138582_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeERD8VDOfXzwRtzebwwSQ3KIbh6xsNvwEghuHrGw2_ASHy367h9M05HNeGlgWQj0jpW84IANe86Filr2sXU6kMb&_nc_ohc=oUUB2l0oRIMQ7kNvgFo6q33&_nc_zt=23&_nc_ht=scontent.fmnl30-2.fna&_nc_gid=AZBxnR3PF_-fqPIMWwgQGxI&oh=00_AYBYeJVG46GwyV65nNQSe3kk_17rXvROhBQGqj_1qNUbVA&oe=6774BFF7" alt="Profile Picture" width="200" height="200" />
-        <p>Name: Ric Brian P. Boado</p>
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.6435-9/116731274_118026103338864_7024368847241138582_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeERD8VDOfXzwRtzebwwSQ3KIbh6xsNvwEghuHrGw2_ASHy367h9M05HNeGlgWQj0jpW84IANe86Filr2sXU6kMb&_nc_ohc=oUUB2l0oRIMQ7kNvgFo6q33&_nc_zt=23&_nc_ht=scontent.fmnl30-2.fna&_nc_gid=AZBxnR3PF_-fqPIMWwgQGxI&oh=00_AYBYeJVG46GwyV65nNQSe3kk_17rXvROhBQGqj_1qNUbVA&oe=6774BFF7" 
+          alt="Profile Picture" class="img-fluid rounded-circle" style="width: 200px; height: 200px;" />
+      </div>
+      <div class="col-md-9">
+        <p><strong>Name:</strong> Ric Brian P. Boado</p>
         <p>Currently studying Bachelor of Science in Computer Science with a specialization in Cybersecurity and Forensics at Asia Pacific College (APC), 2nd year.</p>
         <p>Consistently an honor/high honor student throughout elementary, high school, and college.</p>
         <p>Interests include video games, coding, anime, and animation.</p>
+      </div>
     </div>
-
+  </section>
+  
+  <!-- Education & Achievements Section -->
+  <section class="my-5">
     <h2>Education & Achievements</h2>
-    <table style="width: 100%; border: 1px solid black; margin: 0 auto;">
-        <tr>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+          <tr>
             <th>Education Level</th>
             <th>Program/Strand</th>
             <th>School</th>
             <th>Year</th>
             <th>Awards</th>
-        </tr>
-        <tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
             <td>College</td>
             <td>BS Computer Science with specialization in Cybersecurity and Forensics</td>
             <td>Asia Pacific College</td>
             <td>2023-2027</td>
             <td>Honor Student</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Senior High School</td>
             <td>TVL-ICT</td>
             <td>Pasay City South High School</td>
             <td>2017-2021</td>
             <td>With High Honors</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Junior High School</td>
             <td>N/A</td>
             <td>Pasay City South High School</td>
             <td>2021-2023</td>
             <td>With High Honors</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Elementary</td>
             <td>N/A</td>
             <td>Villamor Air Base Elementary School</td>
             <td>2011-2017</td>
             <td>Honor Student</td>
-        </tr>
-    </table>
-
-    <h2>IT Experience</h2>
-    <ul>
-        <li>Building my own personal PC</li>
-        <li>Simple coding projects with Python</li>
-        <li>Tutorials on YouTube/courses about coding</li>
-        <li>Basic Wireshark packet handling</li>
-    </ul>
-
-    <h2>Hobbies & Interests</h2>
-    <ol>
-        <li>Video games, coding, and tech-related activities.</li>
-        <li>Enjoys watching anime and exploring animation.</li>
-        <li>Passionate about learning new technologies and programming languages.</li>
-    </ol>
-
-    <h2>Goals in Life / Dream</h2>
-    <ol>
-        <li>Become part of the Philippine Military Academy (PMA) rankings of 350 and proceed to Baguio for further training.</li>
-        <li>Continue my studies and career in cybersecurity and forensics.</li>
-        <li>Achieve personal growth and contribute to society through technology.</li>
-    </ol>
-
-    <h2>Memorable Photos</h2>
-    <div>
-        <a href="https://postimg.cc/dZRKCzfc"><img src="https://i.postimg.cc/dZRKCzfc/mphoto1.jpg" alt="Memorable Photo 1" width="436" height="436" /></a>
-        <a href="https://postimg.cc/9rV22Q4m"><img src="https://i.postimg.cc/9rV22Q4m/mphoto2.jpg" alt="Memorable Photo 2" width="436" height="436" /></a>
-        <a href="https://postimg.cc/Dm1hRXwp"><img src="https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg" alt="Memorable Photo 3" width="436" height="436" /></a>
-        <a href="https://postimg.cc/CBq0hZH1"><img src="https://i.postimg.cc/CBq0hZH1/mphoto4.jpg" alt="Memorable Photo 4" width="436" height="436" /></a>
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </section>
+  
+  <!-- IT Experience Section -->
+  <section class="my-5">
+    <h2>IT Experience</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Building my own personal PC</li>
+      <li class="list-group-item">Simple coding projects with Python</li>
+      <li class="list-group-item">Tutorials on YouTube/courses about coding</li>
+      <li class="list-group-item">Basic Wireshark packet handling</li>
+    </ul>
+  </section>
+  
+  <!-- Hobbies & Interests Section -->
+  <section class="my-5">
+    <h2>Hobbies & Interests</h2>
+    <ol class="list-group">
+      <li class="list-group-item">Video games, coding, and tech-related activities.</li>
+      <li class="list-group-item">Enjoys watching anime and exploring animation.</li>
+      <li class="list-group-item">Passionate about learning new technologies and programming languages.</li>
+    </ol>
+  </section>
+  
+  <!-- Goals Section -->
+  <section class="my-5">
+    <h2>Goals in Life / Dream</h2>
+    <ol class="list-group">
+      <li class="list-group-item">Become part of the Philippine Military Academy (PMA) rankings of 350 and proceed to Baguio for further training.</li>
+      <li class="list-group-item">Continue my studies and career in cybersecurity and forensics.</li>
+      <li class="list-group-item">Achieve personal growth and contribute to society through technology.</li>
+    </ol>
+  </section>
+  
+  <!-- Memorable Photos Section -->
+  <section class="my-5">
+    <h2>Memorable Photos</h2>
+    <div class="row text-center">
+      <div class="col-md-3"><img src="https://i.postimg.cc/dZRKCzfc/mphoto1.jpg" class="img-fluid rounded mb-2" alt="Memorable Photo 1" /></div>
+      <div class="col-md-3"><img src="https://i.postimg.cc/9rV22Q4m/mphoto2.jpg" class="img-fluid rounded mb-2" alt="Memorable Photo 2" /></div>
+      <div class="col-md-3"><img src="https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg" class="img-fluid rounded mb-2" alt="Memorable Photo 3" /></div>
+      <div class="col-md-3"><img src="https://i.postimg.cc/CBq0hZH1/mphoto4.jpg" class="img-fluid rounded mb-2" alt="Memorable Photo 4" /></div>
+    </div>
+  </section>
 </div>
 
 </body>
