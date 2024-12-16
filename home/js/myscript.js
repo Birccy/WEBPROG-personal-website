@@ -5,5 +5,5 @@ function myFunction() {
 
   function myFunction2() {
     const element = document.getElementsByTagName("p");
-    document.getElementById("demo").innerHTML = 'The name of the website owner' + element[0].innerHTML;
+    document.getElementById("demo").innerHTML = 'The name of the website owner!' + element[0].innerHTML;
   }
