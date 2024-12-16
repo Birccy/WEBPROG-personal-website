@@ -9,8 +9,10 @@
 
 <h2>About Me</h2>
 <div>
-    <img src="https://i.postimg.cc/BjhDX0kQ/FB-IMG-1733983675126.jpg" alt="Profile Picture" width="200" height="200" />
-    <p>Name: Ric Brian P. Boado</p>
+    <!-- Profile Image with an id to target it with JavaScript -->
+    <img id="profileImage" src="https://i.postimg.cc/BjhDX0kQ/FB-IMG-1733983675126.jpg" alt="Profile Picture" width="200" height="200" />
+    
+    <p>Name: Ric Brian P. Boado</p> <!-- This is the name of the website owner -->
     <p>Currently studying Bachelor of Science in Computer Science with a specialization in Cybersecurity and Forensics at Asia Pacific College (APC), 2nd year.</p>
     <p>Consistently an honor/high honor student throughout elementary, high school, and college.</p>
     <p>Interests include video games, coding, anime, and animation.</p>
@@ -20,15 +22,20 @@
 
 <p id="demo">A Paragraph.</p>
 
+<!-- Buttons for interaction -->
 <button type="button" onclick="myFunction()">I will change paragraphs!</button>
 
 <button type="button" onclick="myFunction2()">I will give you information!</button>
 
+<!-- Button to change the profile picture -->
+<button type="button" onclick="changeProfilePicture()">Change Profile Picture</button>
+
 <p>This example links to "myscript.js".</p>
-<p>(myFunction and myFunction2 is stored in "myscript.js")</p>
+<p>(myFunction, myFunction2, and changeProfilePicture are stored in "myscript.js")</p>
 
 <script src="js/myscript.js"></script>
 
+<!-- Rest of the content -->
 <h2>Education & Achievements</h2>
 <table style="width: 100%; border: 1px solid black; margin: 0 auto;">
     <tr>
@@ -68,6 +75,7 @@
     </tr>
 </table>
 
+<!-- Additional sections -->
 <h2>IT Experience</h2>
 <ul>
     <li>Building my own personal PC</li>
@@ -87,16 +95,7 @@
 <ol>
     <li>Become part of the Philippine Military Academy (PMA) rankings of 350 and proceed to Baguio for further training.</li>
     <li>Continue my studies and career in cybersecurity and forensics.</li>
-    <li>Achieve personal growth and contribute to society through technology.</li>
 </ol>
-
-<h2>Memorable Photos</h2>
-<div>
-    <a href="https://postimg.cc/dZRKCzfc"><img src="https://i.postimg.cc/dZRKCzfc/mphoto1.jpg" alt="Memorable Photo 1" width="436" height="436" /></a>
-    <a href="https://postimg.cc/9rV22Q4m"><img src="https://i.postimg.cc/9rV22Q4m/mphoto2.jpg" alt="Memorable Photo 2" width="436" height="436" /></a>
-    <a href="https://postimg.cc/Dm1hRXwp"><img src="https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg" alt="Memorable Photo 3" width="436" height="436" /></a>
-    <a href="https://postimg.cc/CBq0hZH1"><img src="https://i.postimg.cc/CBq0hZH1/mphoto4.jpg" alt="Memorable Photo 4" width="436" height="436" /></a>
-</div>
 
 </body>
 </html>
