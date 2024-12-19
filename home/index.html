@@ -4,33 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            background-image: url('https://via.placeholder.com/1500x1000?text=Diary+Background');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-bottom: 2px solid #333;
+        }
+
+        h1 {
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        img {
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        ul, ol {
+            padding-left: 40px;
+        }
+
+        div.gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        div.gallery a img {
+            width: 200px;
+            height: auto;
+            transition: transform 0.2s;
+        }
+
+        div.gallery a img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-top: 2px solid #333;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Personal Profile Web Page</h1>
     </header>
-
     <main>
-        <!-- About Me Section -->
         <section>
             <h2>About Me</h2>
-            <div class="about-container">
-                <div class="profile-picture-wrapper">
-                    <img src="https://i.postimg.cc/BjhDX0kQ/FB-IMG-1733983675126.jpg" alt="Profile Picture" class="profile-pic">
-                    <canvas id="drawingCanvas"></canvas>
-                </div>
-                <div class="about-text">
-                    <p><strong>Name:</strong> Ric Brian P. Boado</p>
-                    <p>Currently studying Bachelor of Science in Computer Science with a specialization in Cybersecurity and Forensics at Asia Pacific College (APC), 2nd year.</p>
-                    <p>Consistently an honor/high honor student throughout elementary, high school, and college.</p>
-                    <p>Interests include video games, coding, anime, and animation.</p>
-                </div>
+            <div>
+                <img src="https://i.postimg.cc/BjhDX0kQ/FB-IMG-1733983675126.jpg" alt="Profile Picture" width="200" height="200">
+                <p><strong>Name:</strong> Ric Brian P. Boado</p>
+                <p>Currently studying Bachelor of Science in Computer Science with a specialization in Cybersecurity and Forensics at Asia Pacific College (APC), 2nd year.</p>
+                <p>Consistently an honor/high honor student throughout elementary, high school, and college.</p>
+                <p>Interests include video games, coding, anime, and animation.</p>
             </div>
-            <button id="clearCanvas">Clear Sketch</button>
         </section>
 
-        <!-- Education and Achievements -->
         <section>
             <h2>Education & Achievements</h2>
             <table>
@@ -72,18 +142,16 @@
             </table>
         </section>
 
-        <!-- Memorable Photos -->
         <section>
-            <h2>Memorable Photos</h2>
-            <div class="memorable-photos">
-                <a href="https://postimg.cc/dZRKCzfc"><img src="https://i.postimg.cc/dZRKCzfc/mphoto1.jpg" alt="Memorable Photo 1"></a>
-                <a href="https://postimg.cc/9rV22Q4m"><img src="https://i.postimg.cc/9rV22Q4m/mphoto2.jpg" alt="Memorable Photo 2"></a>
-                <a href="https://postimg.cc/Dm1hRXwp"><img src="https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg" alt="Memorable Photo 3"></a>
-                <a href="https://postimg.cc/CBq0hZH1"><img src="https://i.postimg.cc/CBq0hZH1/mphoto4.jpg" alt="Memorable Photo 4"></a>
-            </div>
+            <h2>IT Experience</h2>
+            <ul>
+                <li>Building my own personal PC</li>
+                <li>Simple coding projects with Python</li>
+                <li>Tutorials on YouTube/courses about coding</li>
+                <li>Basic Wireshark packet handling</li>
+            </ul>
         </section>
 
-        <!-- Hobbies -->
         <section>
             <h2>Hobbies & Interests</h2>
             <ol>
@@ -93,7 +161,6 @@
             </ol>
         </section>
 
-        <!-- Goals -->
         <section>
             <h2>Goals in Life / Dream</h2>
             <ol>
@@ -102,8 +169,19 @@
                 <li>Achieve personal growth and contribute to society through technology.</li>
             </ol>
         </section>
-    </main>
 
-    <script src="js/scripts.js"></script>
+        <section>
+            <h2>Memorable Photos</h2>
+            <div class="gallery">
+                <a href="https://postimg.cc/dZRKCzfc"><img src="https://i.postimg.cc/dZRKCzfc/mphoto1.jpg" alt="Memorable Photo 1"></a>
+                <a href="https://postimg.cc/9rV22Q4m"><img src="https://i.postimg.cc/9rV22Q4m/mphoto2.jpg" alt="Memorable Photo 2"></a>
+                <a href="https://postimg.cc/Dm1hRXwp"><img src="https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg" alt="Memorable Photo 3"></a>
+                <a href="https://postimg.cc/CBq0hZH1"><img src="https://i.postimg.cc/CBq0hZH1/mphoto4.jpg" alt="Memorable Photo 4"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ric Brian P. Boado. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
