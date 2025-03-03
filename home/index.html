@@ -6,162 +6,235 @@
   <title>Ric Brian P. Boado | Cybersecurity Student</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Vue.js CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="#" class="logo">RB</a>
-      <ul class="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#goals">Goals</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Ric Brian P. Boado</h1>
-      <p class="tagline">Cybersecurity Student & Aspiring PMA Cadet</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section fade-in">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="about-grid">
-        <img src="https://i.postimg.cc/BjhDX0kQ/FB-IMG-1733983675126.jpg" alt="Ric Brian" class="profile-img">
-        <div class="about-content">
-          <p><strong>Name:</strong> Ric Brian P. Boado</p>
-          <p>Currently studying <strong>BS Computer Science (Cybersecurity & Forensics)</strong> at Asia Pacific College (APC), 2nd year.</p>
-          <p>Consistent honor/high honor student from elementary to college.</p>
-          <h3>Interests</h3>
-          <ul class="interests-list">
-            <li>Video Games</li>
-            <li>Coding Projects</li>
-            <li>Anime & Animation</li>
-            <li>Military Strategy</li>
-          </ul>
-        </div>
+  <div id="app">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">RB</a>
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#comments">Comments</a></li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Education Section -->
-  <section id="education" class="section fade-in">
-    <div class="container">
-      <h2>Education & Achievements</h2>
-      <div class="education-grid">
-        <div class="education-card">
-          <h3>🎓 College</h3>
-          <p><strong>2023-2027</strong></p>
-          <p>Asia Pacific College</p>
-          <p>BS Computer Science (Cybersecurity & Forensics)</p>
-          <p>🏆 Honor Student</p>
-        </div>
-        <div class="education-card">
-          <h3>🏫 Senior High School</h3>
-          <p><strong>2017-2021</strong></p>
-          <p>Pasay City South High School</p>
-          <p>TVL-ICT</p>
-          <p>🥇 With High Honors</p>
-        </div>
-        <div class="education-card">
-          <h3>📚 Junior High School</h3>
-          <p><strong>2021-2023</strong></p>
-          <p>Pasay City South High School</p>
-          <p>With High Honors</p>
-        </div>
-        <div class="education-card">
-          <h3>🏅 Elementary</h3>
-          <p><strong>2011-2017</strong></p>
-          <p>Villamor Air Base Elementary School</p>
-          <p>Honor Student</p>
-        </div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Ric Brian P. Boado</h1>
+        <p class="tagline">Cybersecurity Student & Aspiring PMA Cadet</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="section fade-in">
-    <div class="container">
-      <h2>IT Experience</h2>
-      <div class="experience-grid">
-        <div class="experience-card">
-          <h3>🛠️ Hardware</h3>
-          <ul>
-            <li>Built custom PC rig</li>
-            <li>Hardware troubleshooting</li>
-          </ul>
-        </div>
-        <div class="experience-card">
-          <h3>👨💻 Coding</h3>
-          <ul>
-            <li>Python projects</li>
-            <li>Wireshark basics</li>
-            <li>Web Development (HTML, CSS, JS)</li>
-          </ul>
-        </div>
-        <div class="experience-card">
-          <h3>🎥 Online Learning</h3>
-          <ul>
-            <li>Self-taught through YouTube courses</li>
-            <li>Exploring Cybersecurity & Ethical Hacking</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Goals Section -->
-  <section id="goals" class="section fade-in dark-section">
-    <div class="container">
-      <h2>Life Goals</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">N/A</div>
-          <div class="timeline-content">
-            <h3>PMA Cadet</h3>
-            <p>Join Philippine Military Academy rankings of 350</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2030+</div>
-          <div class="timeline-content">
-            <h3>Cybersecurity Expert</h3>
-            <p>Establish career in cybersecurity and forensics</p>
+    <!-- About Section -->
+    <section id="about" class="section fade-in">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <img src="https://i.postimg.cc/BjhDX0kQ/FB-IMG-1733983675126.jpg" alt="Ric Brian" class="profile-img">
+          <div class="about-content">
+            <p><strong>Name:</strong> Ric Brian P. Boado</p>
+            <p>Currently studying <strong>BS Computer Science (Cybersecurity & Forensics)</strong> at Asia Pacific College (APC), 2nd year.</p>
+            <p>Consistent honor/high honor student from elementary to college.</p>
+            <h3>Interests</h3>
+            <ul class="interests-list">
+              <li>Video Games</li>
+              <li>Coding Projects</li>
+              <li>Anime & Animation</li>
+              <li>Military Strategy</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Photo Gallery -->
-  <section id="gallery" class="section fade-in">
-    <div class="container">
-      <h2>Memorable Moments</h2>
-      <div class="gallery-grid">
-        <img src="https://i.postimg.cc/dZRKCzfc/mphoto1.jpg" alt="Memory 1">
-        <img src="https://i.postimg.cc/9rV22Q4m/mphoto2.jpg" alt="Memory 2">
-        <img src="https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg" alt="Memory 3">
-        <img src="https://i.postimg.cc/CBq0hZH1/mphoto4.jpg" alt="Memory 4">
+    <!-- Education Section -->
+    <section id="education" class="section fade-in">
+      <div class="container">
+        <h2>Education & Achievements</h2>
+        <div class="education-grid">
+          <div class="education-card">
+            <h3>🎓 College</h3>
+            <p><strong>2023-2027</strong></p>
+            <p>Asia Pacific College</p>
+            <p>BS Computer Science (Cybersecurity & Forensics)</p>
+            <p>🏆 Honor Student</p>
+          </div>
+          <div class="education-card">
+            <h3>🏫 Senior High School</h3>
+            <p><strong>2017-2021</strong></p>
+            <p>Pasay City South High School</p>
+            <p>TVL-ICT</p>
+            <p>🥇 With High Honors</p>
+          </div>
+          <div class="education-card">
+            <h3>📚 Junior High School</h3>
+            <p><strong>2021-2023</strong></p>
+            <p>Pasay City South High School</p>
+            <p>With High Honors</p>
+          </div>
+          <div class="education-card">
+            <h3>🏅 Elementary</h3>
+            <p><strong>2011-2017</strong></p>
+            <p>Villamor Air Base Elementary School</p>
+            <p>Honor Student</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="assets/js/scripts.js"></script>
+    <!-- Experience Section -->
+    <section id="experience" class="section fade-in">
+      <div class="container">
+        <h2>IT Experience</h2>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <h3>🛠️ Hardware</h3>
+            <ul>
+              <li>Built custom PC rig</li>
+              <li>Hardware troubleshooting</li>
+            </ul>
+          </div>
+          <div class="experience-card">
+            <h3>👨💻 Coding</h3>
+            <ul>
+              <li>Python projects</li>
+              <li>Wireshark basics</li>
+              <li>Web Development (HTML, CSS, JS)</li>
+            </ul>
+          </div>
+          <div class="experience-card">
+            <h3>🎥 Online Learning</h3>
+            <ul>
+              <li>Self-taught through YouTube courses</li>
+              <li>Exploring Cybersecurity & Ethical Hacking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section id="goals" class="section fade-in dark-section">
+      <div class="container">
+        <h2>Life Goals</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">N/A</div>
+            <div class="timeline-content">
+              <h3>PMA Cadet</h3>
+              <p>Join Philippine Military Academy rankings of 350</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2030+</div>
+            <div class="timeline-content">
+              <h3>Cybersecurity Expert</h3>
+              <p>Establish career in cybersecurity and forensics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vue.js Gallery Section -->
+    <section id="gallery" class="section fade-in">
+      <div class="container">
+        <h2>Memorable Moments</h2>
+        <div class="gallery-grid">
+          <div v-for="image in images" :key="image.id" class="gallery-item" @click="openLightbox(image)">
+            <img :src="image.url" :alt="image.caption">
+            <div class="image-caption">{{ image.caption }}</div>
+          </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div v-if="showLightbox" class="lightbox" @click.self="showLightbox = false">
+          <div class="lightbox-content">
+            <span class="close" @click="showLightbox = false">&times;</span>
+            <img :src="selectedImage.url" :alt="selectedImage.caption">
+            <p class="lightbox-caption">{{ selectedImage.caption }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vue.js Comment Section -->
+    <section id="comments" class="section fade-in">
+      <div class="container">
+        <h2>Leave a Message</h2>
+        <div class="comment-form">
+          <form @submit.prevent="submitComment">
+            <input type="text" v-model="formData.name" placeholder="Your Name" required>
+            <textarea v-model="formData.comment" placeholder="Your Message" required></textarea>
+            <button type="submit">Post Comment</button>
+          </form>
+
+          <div class="comment-list">
+            <div v-for="(comment, index) in comments" :key="index" class="comment-card">
+              <h3>{{ comment.name }}</h3>
+              <p class="comment-date">{{ comment.date }}</p>
+              <p>{{ comment.comment }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Vue.js Script -->
   <script>
-    // Lightbox for gallery images
-    document.querySelectorAll('.gallery-grid img').forEach(img => {
-      img.addEventListener('click', () => {
-        window.open(img.src, '_blank');
-      });
-    });
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          images: [
+            { id: 1, url: 'https://i.postimg.cc/dZRKCzfc/mphoto1.jpg', caption: 'Academic Achievement' },
+            { id: 2, url: 'https://i.postimg.cc/9rV22Q4m/mphoto2.jpg', caption: 'Tech Projects' },
+            { id: 3, url: 'https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg', caption: 'Coding Sessions' },
+            { id: 4, url: 'https://i.postimg.cc/CBq0hZH1/mphoto4.jpg', caption: 'Military Prep' }
+          ],
+          formData: { name: '', comment: '' },
+          comments: [],
+          showLightbox: false,
+          selectedImage: null
+        }
+      },
+      mounted() {
+        if(localStorage.getItem('comments')) {
+          this.comments = JSON.parse(localStorage.getItem('comments'));
+        }
+      },
+      methods: {
+        openLightbox(image) {
+          this.selectedImage = image;
+          this.showLightbox = true;
+        },
+        submitComment() {
+          if(this.formData.name && this.formData.comment) {
+            this.comments.unshift({
+              name: this.formData.name,
+              comment: this.formData.comment,
+              date: new Date().toLocaleString()
+            });
+            this.formData = { name: '', comment: '' };
+            localStorage.setItem('comments', JSON.stringify(this.comments));
+          }
+        }
+      }
+    }).mount('#app');
   </script>
+
+  <!-- Your JS -->
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
