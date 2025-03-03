@@ -1,187 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            background-image: url('https://via.placeholder.com/1500x1000?text=Diary+Background');
-            background-size: cover;
-            background-attachment: fixed;
-            color: #333;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-bottom: 2px solid #333;
-        }
-
-        h1 {
-            font-family: 'Comic Sans MS', cursive;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        img {
-            border: 2px solid #333;
-            border-radius: 10px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background-color: #fff;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        th, td {
-            border: 1px solid #333;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #333;
-            color: white;
-        }
-
-        ul, ol {
-            padding-left: 40px;
-        }
-
-        div.gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        div.gallery a img {
-            width: 200px;
-            height: auto;
-            transition: transform 0.2s;
-        }
-
-        div.gallery a img:hover {
-            transform: scale(1.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-top: 2px solid #333;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ric Brian P. Boado | Cybersecurity Student</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Personal Profile Web Page</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <div>
-                <img src="https://i.postimg.cc/BjhDX0kQ/FB-IMG-1733983675126.jpg" alt="Profile Picture" width="200" height="200">
-                <p><strong>Name:</strong> Ric Brian P. Boado</p>
-                <p>Currently studying Bachelor of Science in Computer Science with a specialization in Cybersecurity and Forensics at Asia Pacific College (APC), 2nd year.</p>
-                <p>Consistently an honor/high honor student throughout elementary, high school, and college.</p>
-                <p>Interests include video games, coding, anime, and animation.</p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">RB</a>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Ric Brian P. Boado</h1>
+      <p class="tagline">Cybersecurity Student & Future PMA Cadet</p>
+      <div class="scroll-down">
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <img src="https://i.postimg.cc/BjhDX0kQ/FB-IMG-1733983675126.jpg" alt="Ric Brian" class="profile-img">
+        <div class="about-content">
+          <p class="intro-text">Currently studying <strong>BS Computer Science with a specialization in Cybersecurity and Forensics</strong> at Asia Pacific College (APC).</p>
+          <div class="highlight-box">
+            <div class="highlight-item">
+              <span>🏆</span>
+              <p>Consistent Honor/High Honor Student</p>
             </div>
-        </section>
-
-        <section>
-            <h2>Education & Achievements</h2>
-            <table>
-                <tr>
-                    <th>Education Level</th>
-                    <th>Program/Strand</th>
-                    <th>School</th>
-                    <th>Year</th>
-                    <th>Awards</th>
-                </tr>
-                <tr>
-                    <td>College</td>
-                    <td>BS Computer Science with specialization in Cybersecurity and Forensics</td>
-                    <td>Asia Pacific College</td>
-                    <td>2023-2027</td>
-                    <td>Honor Student</td>
-                </tr>
-                <tr>
-                    <td>Senior High School</td>
-                    <td>TVL-ICT</td>
-                    <td>Pasay City South High School</td>
-                    <td>2017-2021</td>
-                    <td>With High Honors</td>
-                </tr>
-                <tr>
-                    <td>Junior High School</td>
-                    <td>N/A</td>
-                    <td>Pasay City South High School</td>
-                    <td>2021-2023</td>
-                    <td>With High Honors</td>
-                </tr>
-                <tr>
-                    <td>Elementary</td>
-                    <td>N/A</td>
-                    <td>Villamor Air Base Elementary School</td>
-                    <td>2011-2017</td>
-                    <td>Honor Student</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
-            <h2>IT Experience</h2>
-            <ul>
-                <li>Building my own personal PC</li>
-                <li>Simple coding projects with Python</li>
-                <li>Tutorials on YouTube/courses about coding</li>
-                <li>Basic Wireshark packet handling</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Hobbies & Interests</h2>
-            <ol>
-                <li>Video games, coding, and tech-related activities.</li>
-                <li>Enjoys watching anime and exploring animation.</li>
-                <li>Passionate about learning new technologies and programming languages.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Goals in Life / Dream</h2>
-            <ol>
-                <li>Become part of the Philippine Military Academy (PMA) rankings of 350 and proceed to Baguio for further training.</li>
-                <li>Continue my studies and career in cybersecurity and forensics.</li>
-                <li>Achieve personal growth and contribute to society through technology.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Memorable Photos</h2>
-            <div class="gallery">
-                <a href="https://postimg.cc/dZRKCzfc"><img src="https://i.postimg.cc/dZRKCzfc/mphoto1.jpg" alt="Memorable Photo 1"></a>
-                <a href="https://postimg.cc/9rV22Q4m"><img src="https://i.postimg.cc/9rV22Q4m/mphoto2.jpg" alt="Memorable Photo 2"></a>
-                <a href="https://postimg.cc/Dm1hRXwp"><img src="https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg" alt="Memorable Photo 3"></a>
-                <a href="https://postimg.cc/CBq0hZH1"><img src="https://i.postimg.cc/CBq0hZH1/mphoto4.jpg" alt="Memorable Photo 4"></a>
+            <div class="highlight-item">
+              <span>💻</span>
+              <p>Passionate about Tech & Cybersecurity</p>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Ric Brian P. Boado. All Rights Reserved.</p>
-    </footer>
+          </div>
+          <h3>Interests</h3>
+          <ul class="interests-list">
+            <li>Video Games</li>
+            <li>Coding Projects</li>
+            <li>Anime & Animation</li>
+            <li>Military Strategy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section (Already Done - Paste Previous Code Here) -->
+
+  <!-- Experience Section -->
+  <section id="experience" class="section fade-in">
+    <div class="container">
+      <h2>IT Experience</h2>
+      <div class="experience-grid">
+        <div class="experience-card">
+          <h3>🛠️ Hardware</h3>
+          <ul>
+            <li>Built custom PC rig</li>
+            <li>Hardware troubleshooting</li>
+          </ul>
+        </div>
+        <div class="experience-card">
+          <h3>👨💻 Coding</h3>
+          <ul>
+            <li>Python projects</li>
+            <li>Wireshark basics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals Section -->
+  <section id="goals" class="section fade-in dark-section">
+    <div class="container">
+      <h2>Life Goals</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2027</div>
+          <div class="timeline-content">
+            <h3>PMA Cadet</h3>
+            <p>Join Philippine Military Academy rankings of 350</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2030+</div>
+          <div class="timeline-content">
+            <h3>Cybersecurity Expert</h3>
+            <p>Establish career in cybersecurity and forensics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="gallery" class="section fade-in">
+    <div class="container">
+      <h2>Memorable Moments</h2>
+      <div class="gallery-grid">
+        <img src="https://i.postimg.cc/dZRKCzfc/mphoto1.jpg" alt="Memory 1">
+        <img src="https://i.postimg.cc/9rV22Q4m/mphoto2.jpg" alt="Memory 2">
+        <img src="https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg" alt="Memory 3">
+        <img src="https://i.postimg.cc/CBq0hZH1/mphoto4.jpg" alt="Memory 4">
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
